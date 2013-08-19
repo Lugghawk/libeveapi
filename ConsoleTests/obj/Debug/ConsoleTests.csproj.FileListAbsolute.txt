@@ -1,0 +1,8 @@
+E:\Downloads\libeveapi_source\ConsoleTests\obj\Debug\ConsoleTests.csprojResolveAssemblyReference.cache
+E:\Downloads\libeveapi_source\ConsoleTests\bin\Debug\ConsoleTests.exe
+E:\Downloads\libeveapi_source\ConsoleTests\bin\Debug\ConsoleTests.pdb
+E:\Downloads\libeveapi_source\ConsoleTests\bin\Debug\libeveapi.dll
+E:\Downloads\libeveapi_source\ConsoleTests\bin\Debug\libeveapi.pdb
+E:\Downloads\libeveapi_source\ConsoleTests\bin\Debug\libeveapi.xml
+E:\Downloads\libeveapi_source\ConsoleTests\obj\Debug\ConsoleTests.exe
+E:\Downloads\libeveapi_source\ConsoleTests\obj\Debug\ConsoleTests.pdb

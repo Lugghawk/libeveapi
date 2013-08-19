@@ -1,0 +1,9 @@
+E:\Downloads\libeveapi_source\UnitTests\bin\Debug\UnitTests.dll
+E:\Downloads\libeveapi_source\UnitTests\bin\Debug\UnitTests.pdb
+E:\Downloads\libeveapi_source\UnitTests\bin\Debug\libeveapi.dll
+E:\Downloads\libeveapi_source\UnitTests\bin\Debug\nunit.framework.dll
+E:\Downloads\libeveapi_source\UnitTests\bin\Debug\libeveapi.pdb
+E:\Downloads\libeveapi_source\UnitTests\bin\Debug\libeveapi.xml
+E:\Downloads\libeveapi_source\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+E:\Downloads\libeveapi_source\UnitTests\obj\Debug\UnitTests.dll
+E:\Downloads\libeveapi_source\UnitTests\obj\Debug\UnitTests.pdb

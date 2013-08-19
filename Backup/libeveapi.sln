@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libeveapi", "libeveapi\libeveapi.csproj", "{16840879-B98B-4860-892E-361B8F7BFF91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{555BD6DA-72B6-4F15-A89F-C39F212F4B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTests", "ConsoleTests\ConsoleTests.csproj", "{029CE9EF-2267-408F-830E-DC44F12BA0A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dll", "Dll", "{89EB2371-B235-4302-A762-95BCA93ECCDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nUnit", "nUnit", "{E28897E2-39F0-4206-BFEF-E2EEB17D4BED}"
+	ProjectSection(SolutionItems) = preProject
+		Dll\nUnit\nunit.framework.dll = Dll\nUnit\nunit.framework.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16840879-B98B-4860-892E-361B8F7BFF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16840879-B98B-4860-892E-361B8F7BFF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16840879-B98B-4860-892E-361B8F7BFF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16840879-B98B-4860-892E-361B8F7BFF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555BD6DA-72B6-4F15-A89F-C39F212F4B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555BD6DA-72B6-4F15-A89F-C39F212F4B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555BD6DA-72B6-4F15-A89F-C39F212F4B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555BD6DA-72B6-4F15-A89F-C39F212F4B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029CE9EF-2267-408F-830E-DC44F12BA0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029CE9EF-2267-408F-830E-DC44F12BA0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029CE9EF-2267-408F-830E-DC44F12BA0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029CE9EF-2267-408F-830E-DC44F12BA0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E28897E2-39F0-4206-BFEF-E2EEB17D4BED} = {89EB2371-B235-4302-A762-95BCA93ECCDC}
+	EndGlobalSection
+EndGlobal

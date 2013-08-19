@@ -1,0 +1,6 @@
+E:\Downloads\libeveapi_source\libeveapi\bin\Debug\libeveapi.XML
+E:\Downloads\libeveapi_source\libeveapi\bin\Debug\libeveapi.dll
+E:\Downloads\libeveapi_source\libeveapi\bin\Debug\libeveapi.pdb
+E:\Downloads\libeveapi_source\libeveapi\obj\Debug\libeveapi.dll
+E:\Downloads\libeveapi_source\libeveapi\obj\Debug\libeveapi.pdb
+E:\Downloads\libeveapi_source\libeveapi\obj\Debug\libeveapi.csprojResolveAssemblyReference.cache

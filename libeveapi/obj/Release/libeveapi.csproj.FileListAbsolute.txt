@@ -1,0 +1,5 @@
+E:\Downloads\libeveapi_source\libeveapi\bin\Release\libeveapi.XML
+E:\Downloads\libeveapi_source\libeveapi\bin\Release\libeveapi.dll
+E:\Downloads\libeveapi_source\libeveapi\bin\Release\libeveapi.pdb
+E:\Downloads\libeveapi_source\libeveapi\obj\Release\libeveapi.dll
+E:\Downloads\libeveapi_source\libeveapi\obj\Release\libeveapi.pdb
