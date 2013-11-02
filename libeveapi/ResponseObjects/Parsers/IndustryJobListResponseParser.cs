@@ -36,36 +36,36 @@ namespace libeveapi.ResponseObjects.Parsers
         {
             IndustryJobList.IndustryJobListItem IndustryJobListItem = new IndustryJobList.IndustryJobListItem();
 
-            IndustryJobListItem.JobId = Convert.ToInt32(industryJobRow.Attributes["jobID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.AssemblyLineId = Convert.ToInt32(industryJobRow.Attributes["assemblyLineID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.ContainerId = Convert.ToInt32(industryJobRow.Attributes["containerID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemId = Convert.ToInt32(industryJobRow.Attributes["installedItemID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemLocationId = Convert.ToInt32(industryJobRow.Attributes["installedItemLocationID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemQuantity = Convert.ToInt32(industryJobRow.Attributes["installedItemQuantity"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemProductivityLevel = Convert.ToInt32(industryJobRow.Attributes["installedItemProductivityLevel"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemMaterialLevel = Convert.ToInt32(industryJobRow.Attributes["installedItemMaterialLevel"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemLicensedProductionRunsRemaining = Convert.ToInt32(industryJobRow.Attributes["installedItemLicensedProductionRunsRemaining"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.OutputLocationId = Convert.ToInt32(industryJobRow.Attributes["outputLocationID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstallerId = Convert.ToInt32(industryJobRow.Attributes["installerID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.Runs = Convert.ToInt32(industryJobRow.Attributes["runs"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.LicensedProductionRuns = Convert.ToInt32(industryJobRow.Attributes["licensedProductionRuns"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledInSolarSystemId = Convert.ToInt32(industryJobRow.Attributes["installedInSolarSystemID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.ContainerLocationId = Convert.ToInt32(industryJobRow.Attributes["containerLocationID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.JobId = Convert.ToInt64(industryJobRow.Attributes["jobID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.AssemblyLineId = Convert.ToInt64(industryJobRow.Attributes["assemblyLineID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.ContainerId = Convert.ToInt64(industryJobRow.Attributes["containerID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemId = Convert.ToInt64(industryJobRow.Attributes["installedItemID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemLocationId = Convert.ToInt64(industryJobRow.Attributes["installedItemLocationID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemQuantity = Convert.ToInt64(industryJobRow.Attributes["installedItemQuantity"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemProductivityLevel = Convert.ToInt64(industryJobRow.Attributes["installedItemProductivityLevel"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemMaterialLevel = Convert.ToInt64(industryJobRow.Attributes["installedItemMaterialLevel"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemLicensedProductionRunsRemaining = Convert.ToInt64(industryJobRow.Attributes["installedItemLicensedProductionRunsRemaining"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.OutputLocationId = Convert.ToInt64(industryJobRow.Attributes["outputLocationID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstallerId = Convert.ToInt64(industryJobRow.Attributes["installerID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.Runs = Convert.ToInt64(industryJobRow.Attributes["runs"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.LicensedProductionRuns = Convert.ToInt64(industryJobRow.Attributes["licensedProductionRuns"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledInSolarSystemId = Convert.ToInt64(industryJobRow.Attributes["installedInSolarSystemID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.ContainerLocationId = Convert.ToInt64(industryJobRow.Attributes["containerLocationID"].InnerText, CultureInfo.InvariantCulture);
             IndustryJobListItem.MaterialMultiplier = Convert.ToDouble(industryJobRow.Attributes["materialMultiplier"].InnerText, CultureInfo.InvariantCulture);
             IndustryJobListItem.CharMaterialMultiplier = Convert.ToDouble(industryJobRow.Attributes["charMaterialMultiplier"].InnerText, CultureInfo.InvariantCulture);
             IndustryJobListItem.TimeMultiplier = Convert.ToDouble(industryJobRow.Attributes["timeMultiplier"].InnerText, CultureInfo.InvariantCulture);
             IndustryJobListItem.CharTimeMultiplier = Convert.ToDouble(industryJobRow.Attributes["charTimeMultiplier"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemTypeId = Convert.ToInt32(industryJobRow.Attributes["installedItemTypeID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.OutputTypeId = Convert.ToInt32(industryJobRow.Attributes["outputTypeID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.ContainerTypeId = Convert.ToInt32(industryJobRow.Attributes["containerTypeID"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemCopy = Convert.ToBoolean(Convert.ToInt32(industryJobRow.Attributes["installedItemCopy"].InnerText, CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
-            IndustryJobListItem.Completed = Convert.ToBoolean(Convert.ToInt32(industryJobRow.Attributes["completed"].InnerText, CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
-            IndustryJobListItem.CompletedSuccessfully = Convert.ToBoolean(Convert.ToInt32(industryJobRow.Attributes["completedSuccessfully"].InnerText, CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
-            IndustryJobListItem.InstalledItemFlag = Convert.ToInt32(industryJobRow.Attributes["installedItemFlag"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.OutputFlag = Convert.ToInt32(industryJobRow.Attributes["outputFlag"].InnerText, CultureInfo.InvariantCulture);
-            IndustryJobListItem.ActivityId = Convert.ToInt32(industryJobRow.Attributes["activityID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemTypeId = Convert.ToInt64(industryJobRow.Attributes["installedItemTypeID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.OutputTypeId = Convert.ToInt64(industryJobRow.Attributes["outputTypeID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.ContainerTypeId = Convert.ToInt64(industryJobRow.Attributes["containerTypeID"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemCopy = Convert.ToBoolean(Convert.ToInt64(industryJobRow.Attributes["installedItemCopy"].InnerText, CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
+            IndustryJobListItem.Completed = Convert.ToBoolean(Convert.ToInt64(industryJobRow.Attributes["completed"].InnerText, CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
+            IndustryJobListItem.CompletedSuccessfully = Convert.ToBoolean(Convert.ToInt64(industryJobRow.Attributes["completedSuccessfully"].InnerText, CultureInfo.InvariantCulture), CultureInfo.InvariantCulture);
+            IndustryJobListItem.InstalledItemFlag = Convert.ToInt64(industryJobRow.Attributes["installedItemFlag"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.OutputFlag = Convert.ToInt64(industryJobRow.Attributes["outputFlag"].InnerText, CultureInfo.InvariantCulture);
+            IndustryJobListItem.ActivityId = Convert.ToInt64(industryJobRow.Attributes["activityID"].InnerText, CultureInfo.InvariantCulture);
 
-            switch (Convert.ToInt32(industryJobRow.Attributes["activityID"].InnerText, CultureInfo.InvariantCulture))
+            switch (Convert.ToInt64(industryJobRow.Attributes["activityID"].InnerText, CultureInfo.InvariantCulture))
             {
                 case 1:
                     IndustryJobListItem.Activity = Activities.Manufacturing;
@@ -96,7 +96,7 @@ namespace libeveapi.ResponseObjects.Parsers
                     break;
             }
 
-            switch (Convert.ToInt32(industryJobRow.Attributes["completedStatus"].InnerText, CultureInfo.InvariantCulture))
+            switch (Convert.ToInt64(industryJobRow.Attributes["completedStatus"].InnerText, CultureInfo.InvariantCulture))
             {
                 case 0:
                     IndustryJobListItem.CompletedStatus = IndustryJobCompletedStatuses.Failed;

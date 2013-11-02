@@ -28,34 +28,34 @@ namespace libeveapi
         /// </summary>
         public class IndustryJobListItem
         {
-            private int jobId;
-            private int assemblyLineId;
-            private int containerId;
-            private int installedItemId;
-            private int installedItemLocationId;
-            private int installedItemQuantity;
-            private int installedItemProductivityLevel;
-            private int installedItemMaterialLevel;
-            private int installedItemLicensedProductionRunsRemaining;
-            private int outputLocationId;
-            private int installerId;
-            private int runs;
-            private int licensedProductionRuns;
-            private int installedInSolarSystemId;
-            private int containerLocationId;
+            private long jobId;
+            private long assemblyLineId;
+            private long containerId;
+            private long installedItemId;
+            private long installedItemLocationId;
+            private long installedItemQuantity;
+            private long installedItemProductivityLevel;
+            private long installedItemMaterialLevel;
+            private long installedItemLicensedProductionRunsRemaining;
+            private long outputLocationId;
+            private long installerId;
+            private long runs;
+            private long licensedProductionRuns;
+            private long installedInSolarSystemId;
+            private long containerLocationId;
             private double materialMultiplier;
             private double charMaterialMultiplier;
             private double timeMultiplier;
             private double charTimeMultiplier;
-            private int installedItemTypeId;
-            private int outputTypeId;
-            private int containerTypeId;
+            private long installedItemTypeId;
+            private long outputTypeId;
+            private long containerTypeId;
             private bool installedItemCopy;
             private bool completed;
             private bool completedSuccessfully;
-            private int installedItemFlag;
-            private int outputFlag;
-            private int activityId;
+            private long installedItemFlag;
+            private long outputFlag;
+            private long activityId;
             private Activities activity;
             private IndustryJobCompletedStatuses completedStatus;
             private DateTime installTime;
@@ -71,16 +71,16 @@ namespace libeveapi
             /// This is the unique job id that is assigned 
             /// to the job by the eve system
             /// </summary>
-            public int JobId
+            public long JobId
             {
                 get { return jobId; }
                 set { jobId = value; }
             }
 
             /// <summary>
-            /// This is the assembly line that it is installed into if in a station
+            /// This is the assembly line that it is installed longo if in a station
             /// </summary>
-            public int AssemblyLineId
+            public long AssemblyLineId
             {
                 get { return assemblyLineId; }
                 set { assemblyLineId = value; }
@@ -89,7 +89,7 @@ namespace libeveapi
             /// <summary>
             /// 
             /// </summary>
-            public int ContainerId
+            public long ContainerId
             {
                 get { return containerId; }
                 set { containerId = value; }
@@ -101,7 +101,7 @@ namespace libeveapi
             /// isnt really useful as it can change, but it will link back
             /// to something in your asset list (hopefully)
             /// </summary>
-            public int InstalledItemId
+            public long InstalledItemId
             {
                 get { return installedItemId; }
                 set { installedItemId = value; }
@@ -110,7 +110,7 @@ namespace libeveapi
             /// <summary>
             /// This is the locationId of where the item was installed
             /// </summary>
-            public int InstalledItemLocationId
+            public long InstalledItemLocationId
             {
                 get { return installedItemLocationId; }
                 set { installedItemLocationId = value; }
@@ -119,25 +119,25 @@ namespace libeveapi
             /// <summary>
             /// This is how many of the item were installed, (usually 1)
             /// </summary>
-            public int InstalledItemQuantity
+            public long InstalledItemQuantity
             {
                 get { return installedItemQuantity; }
                 set { installedItemQuantity = value; }
             }
 
             /// <summary>
-            /// This is the blueprints Productivity Level (TE)
+            /// This is the blueprlongs Productivity Level (TE)
             /// </summary>
-            public int InstalledItemProductivityLevel
+            public long InstalledItemProductivityLevel
             {
                 get { return installedItemProductivityLevel; }
                 set { installedItemProductivityLevel = value; }
             }
 
             /// <summary>
-            /// This is the blueprints Material Level (ME)
+            /// This is the blueprlongs Material Level (ME)
             /// </summary>
-            public int InstalledItemMaterialLevel
+            public long InstalledItemMaterialLevel
             {
                 get { return installedItemMaterialLevel; }
                 set { installedItemMaterialLevel = value; }
@@ -145,10 +145,10 @@ namespace libeveapi
 
             /// <summary>
             /// This is how many production runs are left on the
-            /// blueprint that was installed.  A -1 represents a BPO
+            /// blueprlong that was installed.  A -1 represents a BPO
             /// with unlimited copies left.
             /// </summary>
-            public int InstalledItemLicensedProductionRunsRemaining
+            public long InstalledItemLicensedProductionRunsRemaining
             {
                 get { return installedItemLicensedProductionRunsRemaining; }
                 set { installedItemLicensedProductionRunsRemaining = value; }
@@ -157,7 +157,7 @@ namespace libeveapi
             /// <summary>
             /// This is where the output of the job will be placed
             /// </summary>
-            public int OutputLocationId
+            public long OutputLocationId
             {
                 get { return outputLocationId; }
                 set { outputLocationId = value; }
@@ -166,7 +166,7 @@ namespace libeveapi
             /// <summary>
             /// The characterId of the person who installed the job
             /// </summary>
-            public int InstallerId
+            public long InstallerId
             {
                 get { return installerId; }
                 set { installerId = value; }
@@ -176,7 +176,7 @@ namespace libeveapi
             /// <summary>
             /// This is how many runs of the object are being made.
             /// </summary>
-            public int Runs
+            public long Runs
             {
                 get { return runs; }
                 set { runs = value; }
@@ -186,7 +186,7 @@ namespace libeveapi
             /// <summary>
             /// 
             /// </summary>
-            public int LicensedProductionRuns
+            public long LicensedProductionRuns
             {
                 get { return licensedProductionRuns; }
                 set { licensedProductionRuns = value; }
@@ -196,7 +196,7 @@ namespace libeveapi
             /// <summary>
             /// This is the solarsystemId of where the job was installed
             /// </summary>
-            public int InstalledInSolarSystemId
+            public long InstalledInSolarSystemId
             {
                 get { return installedInSolarSystemId; }
                 set { installedInSolarSystemId = value; }
@@ -206,7 +206,7 @@ namespace libeveapi
             /// <summary>
             /// Where the container is located at, usually a moon or station.
             /// </summary>
-            public int ContainerLocationId
+            public long ContainerLocationId
             {
                 get { return containerLocationId; }
                 set { containerLocationId = value; }
@@ -256,7 +256,7 @@ namespace libeveapi
             /// <summary>
             /// This is the typeId of the item that was installed (a blueprint)
             /// </summary>
-            public int InstalledItemTypeId
+            public long InstalledItemTypeId
             {
                 get { return installedItemTypeId; }
                 set { installedItemTypeId = value; }
@@ -268,7 +268,7 @@ namespace libeveapi
             /// is finished doing whatever it is doing.  For research this will
             /// be the blueprint itself, for manufacturing this will be the item
             /// </summary>
-            public int OutputTypeId
+            public long OutputTypeId
             {
                 get { return outputTypeId; }
                 set { outputTypeId = value; }
@@ -280,14 +280,14 @@ namespace libeveapi
             /// Can be looked up like any typeId, usually a mobile lab 
             /// or something similar
             /// </summary>
-            public int ContainerTypeId
+            public long ContainerTypeId
             {
                 get { return containerTypeId; }
                 set { containerTypeId = value; }
             }
 
             /// <summary>
-            /// This is a bool value if the blueprint installed is a copy or not
+            /// This is a bool value if the blueprlong installed is a copy or not
             /// </summary>
             public bool InstalledItemCopy
             {
@@ -316,7 +316,7 @@ namespace libeveapi
             /// <summary>
             /// Flags, same as used in the assets
             /// </summary>
-            public int InstalledItemFlag
+            public long InstalledItemFlag
             {
                 get { return installedItemFlag; }
                 set { installedItemFlag = value; }
@@ -325,7 +325,7 @@ namespace libeveapi
             /// <summary>
             /// Flags, same as used in the assets
             /// </summary>
-            public int OutputFlag
+            public long OutputFlag
             {
                 get { return outputFlag; }
                 set { outputFlag = value; }
@@ -335,7 +335,7 @@ namespace libeveapi
             /// This is what kind of activity was going on with the item
             /// (use enum Activities)
             /// </summary>
-            public int ActivityId
+            public long ActivityId
             {
                 get { return activityId; }
                 set { activityId = value; }
